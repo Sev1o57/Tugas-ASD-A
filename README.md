@@ -1,58 +1,67 @@
-Selamat datang di repositori Proyek Algoritma dan Struktur Data (ASD). Proyek ini merupakan sebuah Simulator Linked List yang bertujuan untuk memvisualisasikan cara kerja struktur data linked list. Terdapat enam operasi utama yang didukung dalam simulator ini, yaitu: sisip depan, sisip belakang, sisip pada indeks tertentu, hapus, cari, dan balik urutan (reverse).
+# Proyek Mata Kuliah ASD — Simulator Linked List
+
+Selamat datang di repositori Proyek Algoritma dan Struktur Data (ASD). Proyek ini merupakan sebuah Simulator Linked List yang bertujuan untuk memvisualisasikan cara kerja struktur data *linked list*. Terdapat enam operasi utama yang didukung dalam simulator ini, yaitu: sisip depan, sisip belakang, sisip pada indeks tertentu, hapus, cari, dan balik urutan (*reverse*).
 
 Aplikasi ini dapat dijalankan menggunakan dua pendekatan antarmuka yang berbeda. Berikut adalah panduan lengkap untuk menjalankan proyek ini di komputer lokal (localhost).
 
-Persiapan Awal (Penting)
-Dikarenakan adanya batasan ukuran unggahan file yang utuh ke GitHub, seluruh file sumber (source code) proyek ini dikompresi menjadi format .zip.
+---
 
-Sebelum mulai menjalankan aplikasi, mohon pastikan Bapak/Ibu telah mengunduh file .zip tersebut dan mengekstraknya (unzip) ke dalam satu folder di komputer. Setelah diekstrak, silakan ikuti salah satu dari dua cara di bawah ini untuk mencoba simulator.
+## Persiapan Awal (Penting)
+Dikarenakan adanya batasan ukuran unggahan file yang utuh ke GitHub, seluruh file sumber (*source code*) proyek ini dikompresi menjadi format `.zip`. 
 
-1. Cara Menjalankan Backend (Flask + Python)
+Sebelum mulai menjalankan aplikasi, **mohon pastikan Bapak/Ibu telah mengunduh file `.zip` tersebut dan mengekstraknya (unzip)** ke dalam satu folder di komputer. Setelah diekstrak, silakan ikuti salah satu dari dua cara di bawah ini untuk mencoba simulator.
+
+---
+
+## 1. Cara Menjalankan Backend (Flask + Python)
 Metode ini adalah cara utama untuk menjalankan proyek. Pastikan Python 3 sudah terpasang di komputer yang digunakan.
 
-Buka Terminal atau Command Prompt (CMD), lalu arahkan direktori ke dalam folder flask-app yang ada di folder hasil ekstrak:
+1. Buka Terminal atau Command Prompt (CMD), lalu arahkan direktori ke dalam folder `flask-app` yang ada di folder hasil ekstrak:
+   ```bash
+   cd flask-app
+   ```
 
-Bash
-cd flask-app
-(Opsional namun sangat disarankan) Buat dan aktifkan virtual environment agar dependensi proyek tidak bercampur dengan sistem utama:
+2. (Opsional namun sangat disarankan) Buat dan aktifkan virtual environment agar dependensi proyek tidak bercampur dengan sistem utama :
+    ```bash
+   python -m venv venv
+   ```
 
-Bash
-python -m venv venv
-Cara aktivasi:
+3. Instal seluruh dependensi dan pustaka yang dibutuhkan:
+    ```bash
+   pip install -r requirements.txt
+   ```
 
-Untuk pengguna Mac/Linux: source venv/bin/activate
+4. Jalankan aplikasi server:
+    ```bash
+   python app.py
+   ```
 
-Untuk pengguna Windows: .\venv\Scripts\activate
-
-Instal seluruh dependensi dan pustaka yang dibutuhkan:
-
-Bash
-pip install -r requirements.txt
-Jalankan aplikasi server:
-
-Bash
-python app.py
-Buka web browser dan akses alamat berikut:
+5. Buka web browser dan akses alamat berikut:
 http://127.0.0.1:5000
+(Note : Press Ctrl + c To Stop the server).
 
-(Catatan: Untuk menghentikan server, silakan tekan Ctrl + C pada terminal).
+## Cara Menjalankan (Aplikasi Web React)
 
-2. Cara Menjalankan Frontend (Aplikasi Web React)
-Metode ini digunakan untuk menjalankan antarmuka berbasis React. Pastikan Node.js (versi 18 atau lebih baru) sudah terpasang di komputer.
+Cara ini butuh Node.js (versi 18 atau lebih baru) yang sudah terpasang di komputer.
 
-Buka Terminal atau CMD baru, lalu arahkan ke folder utama hasil ekstrak proyek (bukan di dalam folder flask-app).
+1. Buka terminal/CMD di folder utama proyek (bukan folder `flask-app`).
 
-Instal dependensi Node.js yang dibutuhkan:
+2. Pasang dependensi:
 
-Bash
-npm install
-Jalankan aplikasi antarmuka:
+   ```bash
+   npm install
+   ```
 
-Bash
-npm run dev
-Buka web browser dan akses tautan lokal yang muncul di terminal (umumnya berada di alamat ini):
-http://localhost:5173
+3. Jalankan aplikasinya:
 
-Setelah halaman termuat, silakan klik tombol "Continue as Guest" untuk masuk dan menggunakan simulator tanpa perlu membuat akun.
+   ```bash
+   npm run dev
+   ```
 
-Terima kasih banyak atas waktu dan perhatian Bapak/Ibu.
+4. Buka browser ke alamat yang muncul di terminal, biasanya:
+
+   **http://localhost:5173**
+
+5. Setelah halaman terbuka, klik tombol **Continue as Guest** untuk masuk tanpa perlu akun, lalu simulator siap digunakan.
+
+   Terima kasih banyak atas waktu dan perhatian Bapak.
