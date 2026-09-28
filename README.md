@@ -1,68 +1,58 @@
-# ASD Project — Simulator Linked List
+Selamat datang di repositori Proyek Algoritma dan Struktur Data (ASD). Proyek ini merupakan sebuah Simulator Linked List yang bertujuan untuk memvisualisasikan cara kerja struktur data linked list. Terdapat enam operasi utama yang didukung dalam simulator ini, yaitu: sisip depan, sisip belakang, sisip pada indeks tertentu, hapus, cari, dan balik urutan (reverse).
 
-Proyek ini berisi dua cara menjalankan simulator linked list. Keduanya memiliki logika operasi yang sama: sisip depan, sisip belakang, sisip di index, hapus, cari, dan balik list.
+Aplikasi ini dapat dijalankan menggunakan dua pendekatan antarmuka yang berbeda. Berikut adalah panduan lengkap untuk menjalankan proyek ini di komputer lokal (localhost).
 
-## Cara Menjalankan (Flask + Python)
+Persiapan Awal (Penting)
+Dikarenakan adanya batasan ukuran unggahan file yang utuh ke GitHub, seluruh file sumber (source code) proyek ini dikompresi menjadi format .zip.
 
-Ini cara utama untuk menjalankan proyek di localhost. Cukup butuh Python 3 yang sudah terpasang di komputer.
+Sebelum mulai menjalankan aplikasi, mohon pastikan Bapak/Ibu telah mengunduh file .zip tersebut dan mengekstraknya (unzip) ke dalam satu folder di komputer. Setelah diekstrak, silakan ikuti salah satu dari dua cara di bawah ini untuk mencoba simulator.
 
-1. Buka terminal/CMD, masuk ke folder proyek:
+1. Cara Menjalankan Backend (Flask + Python)
+Metode ini adalah cara utama untuk menjalankan proyek. Pastikan Python 3 sudah terpasang di komputer yang digunakan.
 
-   ```bash
-   cd flask-app
-   ```
+Buka Terminal atau Command Prompt (CMD), lalu arahkan direktori ke dalam folder flask-app yang ada di folder hasil ekstrak:
 
-2. (Opsional tapi disarankan) Buat dan aktifkan virtual environment:
+Bash
+cd flask-app
+(Opsional namun sangat disarankan) Buat dan aktifkan virtual environment agar dependensi proyek tidak bercampur dengan sistem utama:
 
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-   ```
+Bash
+python -m venv venv
+Cara aktivasi:
 
-   Di Windows gunakan:
+Untuk pengguna Mac/Linux: source venv/bin/activate
 
-   ```bash
-   venv\Scripts\activate
-   ```
+Untuk pengguna Windows: .\venv\Scripts\activate
 
-3. Pasang dependensi:
+Instal seluruh dependensi dan pustaka yang dibutuhkan:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+Bash
+pip install -r requirements.txt
+Jalankan aplikasi server:
 
-4. Jalankan aplikasinya:
+Bash
+python app.py
+Buka web browser dan akses alamat berikut:
+http://127.0.0.1:5000
 
-   ```bash
-   python app.py
-   ```
+(Catatan: Untuk menghentikan server, silakan tekan Ctrl + C pada terminal).
 
-5. Buka browser ke alamat berikut:
+2. Cara Menjalankan Frontend (Aplikasi Web React)
+Metode ini digunakan untuk menjalankan antarmuka berbasis React. Pastikan Node.js (versi 18 atau lebih baru) sudah terpasang di komputer.
 
-   **http://127.0.0.1:5000**
+Buka Terminal atau CMD baru, lalu arahkan ke folder utama hasil ekstrak proyek (bukan di dalam folder flask-app).
 
-Untuk menghentikan aplikasi, tekan `Ctrl + C` di terminal.
+Instal dependensi Node.js yang dibutuhkan:
 
-## Cara Menjalankan (Aplikasi Web React)
+Bash
+npm install
+Jalankan aplikasi antarmuka:
 
-Cara ini butuh Node.js (versi 18 atau lebih baru) yang sudah terpasang di komputer.
+Bash
+npm run dev
+Buka web browser dan akses tautan lokal yang muncul di terminal (umumnya berada di alamat ini):
+http://localhost:5173
 
-1. Buka terminal/CMD di folder utama proyek (bukan folder `flask-app`).
+Setelah halaman termuat, silakan klik tombol "Continue as Guest" untuk masuk dan menggunakan simulator tanpa perlu membuat akun.
 
-2. Pasang dependensi:
-
-   ```bash
-   npm install
-   ```
-
-3. Jalankan aplikasinya:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Buka browser ke alamat yang muncul di terminal, biasanya:
-
-   **http://localhost:5173**
-
-5. Setelah halaman terbuka, klik tombol **Continue as Guest** untuk masuk tanpa perlu akun, lalu simulator siap digunakan.
+Terima kasih banyak atas waktu dan perhatian Bapak/Ibu.
